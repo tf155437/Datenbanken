@@ -6,7 +6,7 @@ LEFT JOIN Film ON Regisseur.RegisseurID = Film.RegisseurID GROUP BY Regisseur.Na
 SELECT*FROM Film;
 SELECT*FROM Regisseur;
 
-
+// Portfolio
 // 1
 SELECT DISTINCT Jahr FROM Film; 
 
