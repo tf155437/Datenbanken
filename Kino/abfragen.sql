@@ -34,3 +34,12 @@ FROM Film
 Group by Jahr
 Order by Anzahl_der_Filme DESC 
 Limit 1; 
+
+//7
+SELECT SUM(Länge) AS Insgesamte_Länge
+FROM Film; 
+ 
+//8
+SELECT Jahr, COUNT(*) AS Anzahl_Film 
+FROM Film
+Group by Jahr; 
