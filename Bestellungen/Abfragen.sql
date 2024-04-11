@@ -1,2 +1,2 @@
-select * from Orders
-
+select * from Orders;
+select * from customers;
