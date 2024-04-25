@@ -35,9 +35,11 @@ Group by Jahr
 Order by Anzahl_der_Filme DESC 
 Limit 2; 
 
-//7 --- insgesamte Länge aller Filme 
-SELECT SUM(Länge) AS Insgesamte_Länge
-FROM Film; 
+//7 --- insgesamte Länge aller Filme pro Regisseur  
+SELECT Regisseur.Nachname, SUM(Länge) AS Insgesamte_Länge
+FROM Regisseur
+Left Join Film On Regisseur.RegisseurID = Film.RegisseurID
+Group by Regisseur.Nachname;
  
 //8 --- Anzahl der Filme jeses Jahr 
 SELECT Jahr, COUNT(*) AS Anzahl_Film 
