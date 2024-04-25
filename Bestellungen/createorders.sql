@@ -23,3 +23,19 @@ INSERT INTO Orders (OrderID, CustomerID, OrderDate) VALUES
 (10383, 3, '1996-12-16'),
 (10355, 3, '1996-11-15'),
 (10278, 1, '1996-08-12');
+
+
+--- neue Kunden 
+INSERT INTO Customers (CostumerID, CostumerName, ContactName, Country) VALUES
+(4, 'Bianchi Biciclette', 'Luca Bianchi', 'Italy'),
+(5, 'Chop Suey Chinese', 'Li Wei', 'China'); 
+
+--- INNER JOIN 
+SELECT * 
+FROM Customers INNER JOIN Orders 
+ON Customers.CustomerID = Orders.CustomerID; 
+
+--- LEFT JOIN 
+SELECT * 
+FROM Customers LEFT JOIN Orders 
+ON Customers.CustomerID = Orders.CustomerID; 

@@ -19,8 +19,8 @@ FROM Film
 Inner Join Regisseur ON Film.RegisseurID = Regisseur.RegisseurID;
 
 //4
-SELECT AVG(Länge) AS Durchschnittliche_Länge
-FROM Film; 
+SELECT ROUND(AVG(Länge)) AS Durchschnittliche_Länge
+FROM Film;
 
 //5 
 SELECT Regisseur.Nachname, Count(Film.RegisseurID) AS Anzahl_der_Filme
@@ -33,13 +33,13 @@ SELECT Jahr, Count(*) AS Anzahl_der_Filme
 FROM Film
 Group by Jahr
 Order by Anzahl_der_Filme DESC 
-Limit 1; 
+Limit 2; 
 
-//7
+//7 --- insgesamte Länge aller Filme 
 SELECT SUM(Länge) AS Insgesamte_Länge
 FROM Film; 
  
-//8
+//8 --- Anzahl der Filme jeses Jahr 
 SELECT Jahr, COUNT(*) AS Anzahl_Film 
 FROM Film
 Group by Jahr; 
