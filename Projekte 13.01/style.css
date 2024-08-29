@@ -1,67 +1,66 @@
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Währungsumrechnung</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
+body 
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 
-        .currency-converter {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
 
-        h2 {
-            margin-bottom: 20px;
-            font-size: 24px;
-            text-align: center;
-        }
+.container {
+    background-color: #93a3ce;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
 
-        .form-group {
-            margin-bottom: 15px;
-        }
+h2 {
+    margin-bottom: 20px;
+}
 
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
-        .form-group input,
-        .form-group select {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
+input[type="number"],
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #db9494;
+    border-radius: 4px;
+}
 
-        .form-group select {
-            cursor: pointer;
-        }
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f384bb;
+    color: rgb(250, 251, 255);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
 
-        .form-group button {
-            width: 100%;
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-        }
+button:hover {
+    background-color: #a3eea7;
+}
 
-        .form-group button:hover {
-            background-color: #45a049;
-        }
-    </style>
+.converter {
+ 
+    max-width: 300px;
+ 
+    margin: auto;
+ 
+    padding: 20px;
+ 
+    border: 1px solid #75afca;
+ 
+    border-radius: 5px;
+ 
+    background-color: #dfeef5
+}

@@ -5,37 +5,43 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Währungsumrechnung</title>
-</head> Währungsumrechnung
+</head> 
 <body>
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Währungsrechner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Währungsrechner</h2>
+        <label for="amount">Betrag:</label>
+        <input type="number" id="amount" placeholder="Betrag eingeben">
 
-    <div class="currency-converter">
-        <h2>Währungsumrechnung</h2>
-        <form id="currencyForm">
-            <div class="form-group">
-                <label for="amount">Betrag:</label>
-                <input type="number" id="amount" name="amount" placeholder="Betrag eingeben" required>
-            </div>
-            <div class="form-group">
-                <label for="currency">Währung:</label>
-                <select id="currency" name="currency">
-                    <option value="USD" selected>US-Dollar (USD)</option>
-                    <option value="EUR">Euro (EUR)</option>
-                    <option value="GBP">Britisches Pfund (GBP)</option>
-                    <option value="JPY">Japanischer Yen (JPY)</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="result">Ergebnis:</label>
-                <input type="text" id="result" name="result" placeholder="Ergebnis" readonly>
-            </div>
-            <div class="form-group">
-                <button type="button" onclick="convertCurrency()">Umrechnen</button>
-            </div>
-        </form>
+        <label for="fromCurrency">Von:</label>
+        <select id="fromCurrency">
+            <option value="EUR">EUR</option>
+            <option value="USD">USD</option>
+            <option value="GBP">GBP</option>
+            <option value="JPY">JPY</option>
+        </select>
+
+        <label for="toCurrency">Nach:</label>
+        <select id="toCurrency">
+            <option value="EUR">EUR</option>
+            <option value="USD">USD</option>
+            <option value="GBP">GBP</option>
+            <option value="JPY">JPY</option>
+        </select>
+
+        <label for="result">Ergebnis:</label>
+        <input type="text" id="result" readonly>
+
+        <button onclick="convertCurrency()">Konvertieren</button>
     </div>
-    
-
     <script src="script.js"></script>
+
+ 
 </body>
 </html>
